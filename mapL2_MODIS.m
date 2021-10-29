@@ -39,10 +39,8 @@ for file = 1:length(sdir)
     lat(lat==0)= NaN;
     
  
-    LATLIMS=[38 40];
+    LATLIMS=[38 40]; %change as above
     LONLIMS=[-125 -123];
-   % bndry_lon=[-128 -128 -122 -122 -128]; %CHANGE BOUNDING BOX VIA MELISSAS EMAIL
-   % bndry_lat=[34 40 40 34 34];
     
     %get date for plot titles
     julianday = filename(6:8);
@@ -54,13 +52,11 @@ for file = 1:length(sdir)
     m_grid('linewi',2,'tickdir','out');
     h=colorbar;
     m_coast('linewidth',0.5,'color','k');
-    %m_coast('patch',[0.5 0.5 0.5]);
     set(get(h,'ylabel'),'String','Chlorophyll-a (mg/m^{3})');
     caxis([0 1]) %change to reflect what chlorophyll concs you are working with
     ylabel('Latitude ( Â°)')
     xlabel('Longitude ( Â°)')
     title([t])
     set(gca,'FontSize',14);  
-    %m_line(bndry_lon,bndry_lat,'linewi',1,'color','k');
     print(gcf,[t,'_chl.pdf'],'-dpdf','-r300'); 
 end
