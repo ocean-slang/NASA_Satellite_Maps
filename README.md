@@ -1,4 +1,4 @@
-# NASA_Satellites_Maps
+# NASA_Satellite_Maps
 In this script, I create maps with MODIS-Aqua data, but you can modify the script for a different NASA satellite.
 
 # About ESA vs. NASA data structures
