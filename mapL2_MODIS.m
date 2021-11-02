@@ -1,3 +1,6 @@
+% Code written by Sarah Lang, slang@uri.edu. University of Rhode Island's Graduate School of Oceanography.
+% November 1, 2021
+
 %% Read data
 cd '/Users/sarahlang/Desktop/mapL2/';
 
